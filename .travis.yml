@@ -14,7 +14,7 @@ after_success:
   - docker build -t mcfisch/multi-server ./server
   - docker build -t mcfisch/multi-worker ./worker
   # Log into Docker CLI
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$docker_password" | docker login -u "$docker_id" --password-stdin
   - docker push mcfisch/multi-client
   - docker push mcfisch/multi-nginx
   - docker push mcfisch/multi-server
