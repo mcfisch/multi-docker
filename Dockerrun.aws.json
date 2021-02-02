@@ -1,0 +1,15 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "mcfisch/multi-client",
+      "hostname": "client"
+    },
+    {
+      "name": "client",
+      "image": "mcfisch/multi-client",
+      "hostname": "client"
+    }
+  ]
+}
